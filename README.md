@@ -17,6 +17,13 @@ fn foo() -> u64 {
 - test functions are called by running `cargo test`
 - `#[test]` marker is an attribute (like annotations in Java)
 
+```rust
+
+#[test]
+fn test_foo() {
+    assert_eq!(64_u64, foo());
+}
+```
 ### Command-Line Arguments
 
 ### Web
