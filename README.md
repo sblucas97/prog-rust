@@ -3,13 +3,13 @@
 ## Chapter 2
 
 ### Functions
-- The "!" char marks a macro invocation not a function call 
+- The "!" char marks a macro invocation not a function call
 - Rust infer types only within function bodies. For function arguments and return types, it should be defined explicitly.
 - The return statement is not needed if the last sentence of a function is a expression WITHOUT a semicolomn
 ```rust
 fn foo() -> u64 {
     45_u64
-} 
+}
 ```
 ### Unit tests
 - `#[test]` atop functions marks them as test functions
@@ -25,6 +25,11 @@ fn test_foo() {
 }
 ```
 ### Command-Line Arguments
+- Traits introduced: a collection of methods that types can implement
+```rust
+use std::str::FromStr;
+```
+- `Result` value introduced. Two possible variants: Ok(v) Err(e)
 
 ### Web
 
